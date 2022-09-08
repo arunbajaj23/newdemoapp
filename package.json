@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx sequelize-cli db:create && node app.js"
+    "start": "npx sequelize-cli db:create && PORT=3020 NODE_ENV=production node app.js",
+    "start_local": "npx sequelize-cli db:create && node app.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
